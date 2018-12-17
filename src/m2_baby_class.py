@@ -108,26 +108,25 @@ class Baby(object):
 #          """ Brief description of what an object of the class 'is'. """
 #
 ###############################################################################
-def __init__(self, name):
-    self.name = name
-    print('Hello baby', self.name + '!')
-    self.total_hours = 0
+    def __init__(self, name):
+        self.name = name
+        print('Hello baby', self.name + '!')
+        self.total_hours = 0
 
-def feed_baby(self):
-    print('Thank you for feeding baby', self.name)
-    self.total_hours = 0
+    def feed_baby(self):
+        print('Thank you for feeding baby', self.name)
+        self.total_hours = 0
 
-def hour_passes(self):
-    self.total_hours = self.total_hours + 1
-    if self.total_hours == 1:
-        print('Baby', self.name, 'is sleeping.')
-    elif self.total_hours == 2:
-        print('Baby', self.name, 'is awake. Time for food.')
-    else:
-        print('Baby', self.name, 'is CRYING uncontrollably! Feed the Baby!')
+    def hour_passes(self):
+        self.total_hours = self.total_hours + 1
+        if self.total_hours == 1:
+            print('Baby', self.name, 'is sleeping.')
+        elif self.total_hours == 2:
+            print('Baby', self.name, 'is awake. Time for food.')
+        else:
+            print('Baby', self.name, 'is CRYING uncontrollably! Feed the Baby!')
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
-
 main()
