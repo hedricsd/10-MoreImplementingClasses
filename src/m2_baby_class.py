@@ -3,8 +3,8 @@ A   Baby   class and functions that use/test it.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Sam Hedrick.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -42,7 +42,7 @@ def main():
 
 
 ###############################################################################
-# TODO: 2.
+# DONE: 2.
 #
 #  Step 2a:  Implement a class called   Baby   that has a constructor method
 #            (__init__) and two other methods, as described below.
@@ -98,6 +98,7 @@ def main():
 #         'Baby <your baby's name> is CRYING uncontrollably!  Feed the Baby!'
 #
 ###############################################################################
+class Baby(object):
 
 ###############################################################################
 # The   Baby   class (and its methods) should begins here.
@@ -107,7 +108,23 @@ def main():
 #          """ Brief description of what an object of the class 'is'. """
 #
 ###############################################################################
+def __init__(self, name):
+    self.name = name
+    print('Hello baby', self.name + '!')
+    self.total_hours = 0
 
+def feed_baby(self):
+    print('Thank you for feeding baby', self.name)
+    self.total_hours = 0
+
+def hour_passes(self):
+    self.total_hours = self.total_hours + 1
+    if self.total_hours == 1:
+        print('Baby', self.name, 'is sleeping.')
+    elif self.total_hours == 2:
+        print('Baby', self.name, 'is awake. Time for food.')
+    else:
+        print('Baby', self.name, 'is CRYING uncontrollably! Feed the Baby!')
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
